@@ -26,12 +26,12 @@ int CheckArrayElements(int [] array) // Проверка на четность.
     int count = 0;
     foreach(int el in array)
     {
-       count += (el % 2 == 0) ? 1 : 0;
+       count += (el % 2 == 0) ? 1 : 0; // Тернарный оператор.
     }
     return count;
 }
 
-int [] array = CreateArray(4, 100, 999); // Диапазон положительных трехзначных чисел. 
+int [] array = CreateArray(4, 100, 999); // Размер массива, диапазон положительных трехзначных чисел. 
 Console.WriteLine($"[{PrintArray(array)}]");
 
 int result = CheckArrayElements(array);
